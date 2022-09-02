@@ -2,6 +2,9 @@
 using Client;
 
 var client = new WCFClient();
+
+//uncommenting this resolves timeout
+//SynchronizationContext.SetSynchronizationContext(new TaskSchedulerSynchronizationContext(TaskScheduler.Default));
 Console.WriteLine($"SynchronizationContext is null: {SynchronizationContext.Current == null}");
 
 var sw = Stopwatch.StartNew();
@@ -14,6 +17,10 @@ catch (Exception e)
 {
     Console.WriteLine($"Async call produced error in {sw.ElapsedMilliseconds}ms - {e.Message}");
 }
+
+//uncommenting this also resolves timeout
+//https://stackoverflow.com/questions/37087103/wcf-client-hangs-on-any-operation-after-awaiting-async-operation-in-console-appl
+//await Task.Yield();
 
 try
 {
