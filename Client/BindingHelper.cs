@@ -23,21 +23,7 @@ namespace Client
                 CloseTimeout = _openCloseTimeout,
                 OpenTimeout = _openCloseTimeout,
                 ReceiveTimeout = _inactivityTimeout,
-                SendTimeout = _inactivityTimeout,
-
-                TransferMode = TransferMode.Buffered,
-                ReaderQuotas = new System.Xml.XmlDictionaryReaderQuotas
-                {
-                    MaxDepth = 32,
-                    MaxBytesPerRead = 4096,
-                    MaxNameTableCharCount = 16384
-                },
-                ReliableSession = new OptionalReliableSession
-                {
-                    Ordered = true,
-                    InactivityTimeout = _inactivityTimeout,
-                    Enabled = false
-                }
+                SendTimeout = _inactivityTimeout
             };
             var customBinding = new CustomBinding(tcpBinding);
             var transportElement = customBinding.Elements.Find<TcpTransportBindingElement>();
