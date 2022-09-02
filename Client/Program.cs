@@ -22,6 +22,9 @@ catch (Exception e)
 //https://stackoverflow.com/questions/37087103/wcf-client-hangs-on-any-operation-after-awaiting-async-operation-in-console-appl
 //await Task.Yield();
 
+//or uncommenting this
+//client = new WCFClient();
+
 try
 {
     var result = client.Operation2("MyName");
