@@ -37,14 +37,6 @@ namespace Client
                     Ordered = true,
                     InactivityTimeout = _inactivityTimeout,
                     Enabled = false
-                },
-                Security = new NetTcpSecurity
-                {
-                    Mode = SecurityMode.Transport,
-                    Transport = new TcpTransportSecurity
-                    {
-                        ClientCredentialType = TcpClientCredentialType.Certificate
-                    }
                 }
             };
             var customBinding = new CustomBinding(tcpBinding);
