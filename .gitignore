@@ -1,0 +1,184 @@
+# Visual Studio
+glob:*.user
+glob:*.suo
+glob:*.cache
+glob:_ReSharper.*/
+relre:/obj/
+relre:/bin/
+relre:/Bin/
+
+# Build structure
+relre:^Build/
+
+# User-specific files
+*.userosscache
+*.sln.docstates
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# MSTest test Results
+[Bb]uild[Ll]og.*
+
+# NUNIT
+*.VisualState.xml
+TestResult.xml
+
+# Build Results of an ATL Project
+[Dd]ebugPS/
+[Rr]eleasePS/
+dlldata.c
+
+# Benchmark Results
+BenchmarkDotNet.Artifacts/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# StyleCop
+StyleCopReport.xml
+
+# Files built by Visual Studio
+*_i.c
+*_p.c
+*_i.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# Visual Studio profiler
+*.vspx
+*.sap
+
+# Visual Studio Trace Files
+*.e2e
+
+# Guidance Automation Toolkit
+*.gpState
+
+# ReSharper is a .NET coding add-in
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# TeamCity is a build add-in
+_TeamCity*
+
+# DotCover is a Code Coverage Tool
+*.dotCover
+
+# AxoCover is a Code Coverage Tool
+.axoCover/*
+!.axoCover/settings.json
+
+# Visual Studio code coverage results
+*.coverage
+*.coveragexml
+
+# NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_*
+
+# MightyMoose
+*.mm.*
+AutoTest.Net/
+
+# Web workbench (sass)
+.sass-cache/
+
+# Installshield output folder
+[Ee]xpress/
+
+# Click-Once directory
+**/publish/
+
+# NuGet Packages
+#*.nupkg
+# NuGet v3's project.json files produces more ignorable files
+#*.nuget.props
+#*.nuget.targets
+
+
+# DocProject is a documentation generator add-in
+DocProject/buildhelp/
+DocProject/Help/*.HxT
+DocProject/Help/*.HxC
+DocProject/Help/*.hhc
+DocProject/Help/*.hhk
+DocProject/Help/*.hhp
+DocProject/Help/Html2
+DocProject/Help/html
+
+# Misc
+glob:Thumbs.db
+glob:*.bak
+glob:*.log
+relre:[Tt]est[Rr]esult*/
+syntax: glob
+*.cs.orig
+*.config.orig
+glob:*.orig
+TestResults/*
+UpgradeLog.XML
+UpgradeLog.htm
+*.vsp
+*.psess
+UpgradeLog*.htm
+bin/
+obj/
+*.suo
+*.user
+TestResults
+**/test-results/*
+
+# Visual Studio 2015 cache/options directory
+.vs/*
+
+# Idea
+.idea/
+
+# Include DLLs if they're in the NuGet packages directory
+!/packages/*/lib/*.dll
+!/packages/*/lib/*/*.dll
+!/packages/*/build/*.dll
+!/packages/*/build/*/*.dll
+!/packages/*/tools/*.dll
+!/packages/*/tools/*.exe
+!/packages/*/runtimes/*/native/*.dll
+!/packages/*/analyzers/dotnet/cs/*.dll
+
+
+**/node_modules/*
